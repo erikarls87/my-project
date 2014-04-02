@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>My experiment</title>
+        <title>Experiment</title>
         <!-- Load jQuery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <!-- Load the jspsych library and plugins -->
@@ -19,23 +19,23 @@
 
     <script>
         // Experiment parameters
-        var n_trials = 20;
+        var n_trials = 40;
         var stimuli = ["img/congruent_left.GIF", "img/congruent_right.GIF", "img/incongruent_left.GIF", "img/incongruent_right.GIF"];
         var stimuli_types = ["congruent", "congruent", "incongruent", "incongruent"];
 
         // Experiment Instructions
-        var welcome_message = "<div id='instructions'><p>Welcome to the " +
-            "experiment. Press enter to begin.</p></div>";
+        var welcome_message = "<div id='instructions'><p>Välkommen. " +
+            "Var god och tryck ENTER för att påbörja experimentet.</p></div>";
 
-        var instructions = "<div id='instructions'><p>You will see a " +
-            "series of images that look similar to this:</p><p>" +
-            "<img src='img/incongruent_right.GIF'></p><p>Press the arrow " +
-            "key that corresponds to the direction that the middle arrow " +
-            "is pointing. For example, in this case you would press the " +
-            "right arrow key.</p><p>Press enter to start.</p>";
+        var instructions = "<div id='instructions'><p>Du kommer att " +
+            "observera en serie bilder liknande exemplet nedan:</p><p>" +
+            "<img src='img/incongruent_right.GIF'></p><p>Din uppgift är " +
+            "att markera den riktning i vilken den mittersta pilen pekar " +
+            "med hjälp av piltangenterna. I detta fall skulle du alltså svara " +
+            "med den högra piltangenten.</p><p>Tryck ENTER för att starta.</p>";
 
-        var debrief = "<div id='instructions'><p>Thank you for " +
-            "participating!  Press enter to see the data.</p></div>";
+        var debrief = "<div id='instructions'><p>Tack så mycket för " +
+            "ditt deltagande!  Tryck ENTER för att hämta data.</p></div>";
 
         // Generating Random Order for Stimuli
         var stimuli_random_order = [];
